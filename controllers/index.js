@@ -1,9 +1,10 @@
 const router = require('express').Router();
 
-// api routes
+//Api
 router.use('/api', require('./api/index'));
-// page routes
-router.use('/signup', require('./signup-route'));
+
+//Pages
+// router.use('/signup', require('./signupRoute'));
 // router.use("/login", );
 // router.use("/dashboard", );
 // router.use("/blog", );
