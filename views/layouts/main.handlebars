@@ -31,8 +31,8 @@
           <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
             <div class='navbar-nav'>
               <a class='nav-link' href='/'>Blog</a>
-              {{#if isLoggedIn}}
-                <a class='nav-link' href='#' id='logout'>Login</a>
+              {{#if loggedIn}}
+                <a class='nav-link' id='logout'>Logout</a>
               {{else}}
                 <a class='nav-link' href='/signup'>Signup</a>
                 <a class='nav-link' href='/login'>Login</a>

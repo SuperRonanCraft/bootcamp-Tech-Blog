@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
   if (loggedIn) {
     res.location('/');
   } else {
-    res.render('login');
+    res.render('signup');
   }
 });
 

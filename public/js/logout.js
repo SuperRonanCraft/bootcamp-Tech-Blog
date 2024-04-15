@@ -7,10 +7,11 @@ function logout() {
       return response.json();
     })
     .then((data) => {
+      console.log(data);
       if (data.loggedOut) {
         document.location.replace('/');
       } else {
-        document.alert('Failed to log out?');
+        window.alert('Failed to log out?');
       }
     });
 }
