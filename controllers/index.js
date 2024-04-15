@@ -9,6 +9,6 @@ router.use('/api', require('./api/index'));
 router.use('/login', require('./loginRoute.js'));
 // router.use("/dashboard", );
 // router.use("/blog", );
-router.use('/', withAuth, require('./homeRoute.js'));
+router.use('/', require('./homeRoute.js'));
 
 module.exports = router;

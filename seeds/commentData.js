@@ -24,7 +24,7 @@ const data = [
 ];
 
 function seedComment() {
-  Comment.bulkCreate(data);
+  return Comment.bulkCreate(data);
 }
 
 module.exports = { seedComment };

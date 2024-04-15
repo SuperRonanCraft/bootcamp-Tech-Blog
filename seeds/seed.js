@@ -11,6 +11,9 @@ const seedAll = async () => {
   await seedComment();
 
   console.log('Seeded all data!');
+  setTimeout(function () {
+    process.exit(0);
+  }, 1000);
 };
 
 seedAll();

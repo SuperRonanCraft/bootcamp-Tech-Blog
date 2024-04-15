@@ -17,7 +17,7 @@ function login(event) {
         if (data.loggedIn) {
           document.location.replace('/');
         } else {
-          document.alert('Failed to login!');
+          alert('Failed to login!');
         }
       });
   }

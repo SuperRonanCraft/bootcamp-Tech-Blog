@@ -25,7 +25,7 @@ const data = [
 ];
 
 function seedBlog() {
-  Blog.bulkCreate(data);
+  return Blog.bulkCreate(data);
 }
 
 module.exports = { seedBlog };
