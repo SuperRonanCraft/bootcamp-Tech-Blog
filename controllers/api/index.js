@@ -8,6 +8,7 @@ router.use('/user', require('./usersRoute'));
 
 //Content
 router.use('/blog', require('./blogRoute'));
+router.use('/comment', require('./commentRoute'));
 // router.use('/comment');
 
 module.exports = router;
