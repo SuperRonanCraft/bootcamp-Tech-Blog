@@ -1,3 +1,28 @@
+body {
+  background-color: #89ad81;
+}
+
+.card {
+  background-color: #ccffc0;
+  border-color: #322424;
+  border-width: 3px;
+}
+
+.btn {
+  background-color: #89ad81;
+}
+
+.card-title {
+  background-color: #322424;
+  color: #ffffff;
+  border-radius: 4px;
+  align-items: center;
+}
+
+nav {
+  background-color: #322424;
+}
+
 .nav-link[aria-current='page'] {
   text-decoration: underline;
 }

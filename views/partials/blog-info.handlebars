@@ -1,12 +1,18 @@
-<div class='card bg-info'>
-  <div class='card-body'>
-    <div><h2 class='card-title'>{{title}}</h2>
-      <p>Posted by {{user.username}} on {{format_date createdAt}}</p>
+<div class='card'>
+  <div class='container'>
+    <div class='row card-title'>
+      <h2 class='col-sm-12 col-md-8'>{{title}}</h2>
+      <p class='col-sm-12 col-md-4'>Posted by
+        {{user.username}}
+        on
+        {{format_date createdAt}}</p>
     </div>
 
-    <p>{{content}}</p>
+    <div class='card-body'>
+      <p>{{content}}</p>
+    </div>
     {{#unless isBlogPage}}
-      <a href='blog/{{id}}' class='btn btn-secondary'>View Post</a>
+      <a href='blog/{{id}}' class='btn mt-2 mb-2'>View Post</a>
     {{/unless}}
   </div>
 </div>
