@@ -33,8 +33,7 @@ Download or Pull this project from GitHub <br />Open the project on your favorit
 
 Use PostMan or Insomnia to call its api with `https://localhost:3001/api/ROUTE` GET or POST methods
 
-
-
+![image](https://github.com/SuperRonanCraft/bootcamp-Tech-Blog/assets/7385626/ad4c37aa-ebbd-4136-a3de-272558e45108)
 
 ## How to Contribute
 
