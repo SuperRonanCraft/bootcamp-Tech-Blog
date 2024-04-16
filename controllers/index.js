@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth.js');
 router.use('/api', require('./api/index'));
 
 //Pages
-// router.use('/signup', require('./signupRoute'));
+router.use('/signup', require('./signupRoute'));
 router.use('/login', require('./loginRoute.js'));
 router.use('/blog', require('./blogRoute.js'));
 // router.use("/dashboard", );

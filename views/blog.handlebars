@@ -5,3 +5,31 @@
         </div>
     </div>
 </div>
+
+
+
+{{#if comments}}
+<div class="container">
+<h2>Comments</h2>
+{{#each comments as |comment|}}
+{{> comment-info}}
+{{/each}}
+</div>
+{{/if}}
+
+{{#if loggedIn}}
+<div class="container">
+<h2>Leave a comment</h2>
+<div class="card shadow-xl">
+  <form id="comment-form">
+  <div class="card-body">
+    <textarea class="textarea textarea-bordered w-100" placeholder="Your comment here" id="comment"></textarea>
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+  </div>
+  </div>
+  </form>
+</div>
+<script src="/js/comment.js"></script>
+{{else}}
+<h3 class="text-center">Login to leave a comment</h3>
+{{/if}}
