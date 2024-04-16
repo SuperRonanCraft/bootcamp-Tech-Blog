@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { Blog, User, Comment } = require('../models/index');
 
 router.get('/', (req, res) => {
   try {
