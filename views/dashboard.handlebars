@@ -1,13 +1,25 @@
-<form class='flex flex-col gap-2 container mx-auto' id='blog-form'>
-  <label class='input input-bordered flex items-center gap-2'>
+<form id='blog' class='container'>
+  <div class='form-group'>
+    <label class='fs-3'>Title</label>
+    <input
+      type='text'
+      class='form-control'
+      id='title'
+      placeholder='My new blog title'
+    />
+  </div>
 
-    <input type='text' class='grow' placeholder='Title' id='title-blog' />
-  </label>
-  <textarea
-    class='textarea textarea-bordered w-full'
-    placeholder='Your blog content'
-    id='content-blog'
-  ></textarea>
-  <button class='btn'>Create</button>
+  <div class='form-group'>
+    <label class='fs-3'>Content</label>
+    <textarea
+      type='textarea'
+      class='form-control'
+      id='content'
+      rows='10'
+    ></textarea>
+  </div>
+
+  <button type='submit' class='btn mt-2'>Create Post</button>
+
 </form>
 <script src='/js/blog.js'></script>
