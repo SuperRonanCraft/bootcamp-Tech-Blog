@@ -6,7 +6,7 @@ router.get('/', withAuth, (req, res) => {
   try {
     Blog.findAll({
       where: {
-        author_id: res.session.userId,
+        author_id: req.session.userId,
       },
       include: [{ model: User }],
     }).then((data) => {

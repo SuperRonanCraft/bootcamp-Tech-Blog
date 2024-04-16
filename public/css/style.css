@@ -9,6 +9,11 @@ body {
 }
 
 .btn {
+  background-color: #322424;
+  color: white;
+}
+
+.card .btn {
   background-color: #89ad81;
 }
 
