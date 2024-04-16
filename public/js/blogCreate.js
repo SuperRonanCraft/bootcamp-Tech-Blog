@@ -15,7 +15,7 @@ async function commentFormHandler(event) {
       .then((data) => {
         console.log(data);
         if (data.posted) {
-          location.replace(`/blog/${data.blog.id}`);
+          location.replace(`/dashboard`);
         } else {
           alert('Failed to post blog!');
         }

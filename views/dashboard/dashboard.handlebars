@@ -1,0 +1,16 @@
+<div class='container'>
+  <h2>My Blog Posts</h2>
+  {{#each blogs as |blog|}}
+    <div class='row card-title my-1'>
+      <a
+        href='/dashboard/{{id}}'
+        class='link fs-3 col-sm-12 col-md-8'
+      >{{title}}</a>
+      <p class='col-sm-12 col-md-4 text-end'>Posted
+        {{format_date createdAt}}</p>
+    </div>
+  {{/each}}
+</div>
+<div class='d-flex justify-content-center'>
+  <a class='btn' id='newpost' href='/dashboard/create'>+ New Post</a>
+</div>

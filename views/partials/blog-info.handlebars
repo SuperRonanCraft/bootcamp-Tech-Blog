@@ -2,10 +2,10 @@
   <div class='container'>
     <div class='row card-title'>
       <h2 class='col-sm-12 col-md-8'>{{title}}</h2>
-      <p class='col-sm-12 col-md-4'>Posted by
-        {{user.username}}
-        on
-        {{format_date createdAt}}</p>
+      <div class='col-sm-12 col-md-4 text-end'>
+        <p class='mb-0'>Posted by {{user.username}}</p>
+        <p class='mb-1 mt-0'>{{format_date createdAt}}</p>
+      </div>
     </div>
 
     <div class='card-body'>
