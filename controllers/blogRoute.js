@@ -19,6 +19,7 @@ router.get('/:id', async (req, res) => {
       ...blog,
       loggedIn: req.session.loggedIn,
     });
+    console.log(blog);
   } catch (err) {
     console.error(err);
   }

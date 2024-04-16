@@ -1,4 +1,5 @@
 const { User, Comment } = require('../models/index');
+const sequelize = require('sequelize');
 
 module.exports = {
   format_time: (date) => {

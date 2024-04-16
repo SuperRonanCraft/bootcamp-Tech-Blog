@@ -17,6 +17,9 @@ body {
   text-decoration: none;
   color: white;
 }
+#cancel-button {
+  background-color: rgb(194, 1, 1);
+}
 
 .card .btn {
   background-color: #89ad81;
