@@ -1,24 +1,26 @@
 const router = require('express').Router();
+const { Blog } = require('../models/index');
 
-router.get('/', (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
-    fetch('/api/blog', {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        res.render('blog', {
-          blog,
-          loggedIn: req.session.loggedIn,
-        });
-      });
+    const data = await Blog.findOne({
+      where: {
+        id: req.params.id,
+      },
+      include: require('../utils/helpers').includeData,
+    });
+    // const blogs = blogData.map((blog) => {
+    //   blog.getDataValue();
+    // });
+
+    const blog = data.get({ plain: true });
+    res.status(200).render('blog', {
+      isBlogPage: true,
+      ...blog,
+      loggedIn: req.session.loggedIn,
+    });
   } catch (err) {
-    console.log(err);
-    res.status(500).send(err);
+    console.error(err);
   }
 });
 
